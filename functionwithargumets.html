@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function with arguments</title>
+
+</head>
+<body>
+    <script>
+        //define function
+        function demo_function(value1,value2){
+            return value1+value2
+        }
+
+        //define function with arrow function method
+
+        let sum=(a,b)=>{
+            return a+b
+        }
+
+        //if only one argument is passed in function w dont need parenthesis
+
+        // const demo=value1=>{
+        //     return value1
+        // }
+
+        //call the function
+        const result=demo_function(20,10)
+        document.write(`${result}<br>`)
+
+        const total=demo_function(50,70)
+        document.write(`${total} <br>`)
+
+        let total1=sum(3,5)
+        document.write(`${total1}`)
+
+
+    </script>
+</body>
+</html>

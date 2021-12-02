@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string method</title>
+</head>
+<body>
+    <script>
+        const string_value="welcome to Dursikshya to attend the dursikshya javascript class."
+        //to count the length of the string use length
+        document.write(`the lenght of the string is ${string_value.length}<br>`)
+        //to find the postion of string in a string use indexOf
+        document.write(`the position of 'to' n the string is ${string_value.indexOf('to')}<br>`)
+        // search(mostly used in regular expression)
+        document.write(`${string_value.search('dursikshya')}<br>`)
+
+        // to find the position of last occurance of a repeated string use lastIndexOf
+
+        document.write(`${string_value.lastIndexOf('to')}<br>`)
+        //to change the string in uppercase use toUpperCase
+        document.write(`${string_value.toUpperCase()}<br>`)
+        //to lower case
+        document.write(`${string_value.toLowerCase()}<br>`)
+        
+        //to replace the specific string with another string.
+        document.write(`${string_value.replace('javascript','css')}<br>`)
+        //replaceAll methods replaces all the string that are similar. 
+        document.write(`${string_value.replaceAll('to','too')}<br>`)
+
+        // replace using regular expression(regular expression is alway wrtten in /.../ ) and insensitive(i) g is for replace globally.
+
+        document.write(`${string_value.replace(/dursikshya/i,'NIIT')}<br>`) //i is for making value case insesitive.
+
+        document.write(`${string_value.replace(/dursikshya/ig,'NIIT')}<br>`)  //ig is used because the string has two values in two different cases.
+
+        document.write(`${string_value.replace(/to/g,'tooo')}<br>`)  // g is use to rplace the value globally.
+
+
+        //substring- certain parts of a string.
+        //substing methods:-
+        // slice(start, end)
+        //substring(start, end)
+        //substr(start,length)
+
+        document.write(`${string_value.slice(0,21)}..........<br>`)
+        document.write(`${string_value.substring(11,21)}.....<br>`)
+
+        document.write(`${string_value.substr(11,21)}.....<br>`) //in substr starting position is counted as 1..(here  character at position 11 is 1  and counted to  21. )
+
+        //charAt()
+        //charCodeAt()
+
+        //concatenate -> for this use +
+        const full_name="Shishir Basnet"
+        document.write('My name is '+ full_name+'<br>')
+
+        const a="15"
+        const b="20"
+        const c=a+b
+        document.write(c)
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+    </script>
+    
+</body>
+</html>

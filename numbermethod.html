@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number method</title>
+</head>
+<body>
+    <script>
+        const a = 15.34356
+        //toFixed() method is used for to show how many numbers to be printed afetr decimals.
+        document.write(`${a.toFixed(2)} <br>`)
+        document.write(`${a.toFixed(3)} <br>`) //here the value is roundup.
+
+        //toPreision() is used for how many numbers to be printed as a whole.
+        document.write(`${a.toPrecision(2)} <br>`)
+        document.write(`${a.toPrecision(3)} <br>`)
+
+        //to convert string to number use the following
+        //Number()
+        //parseInt() eg: 1, 2 ,3
+        // parseFloat() eg : 13.35, 2.5
+
+        const b="15"
+        const c=Number(b)
+        document.write(typeof(c)+'<br>')
+
+        const d=Number("hello")
+        document.write(`${d} <br>`) //Nan ->Not a number
+        document.write(typeof(d)+'<br>')
+
+    </script>
+    
+</body>
+</html>

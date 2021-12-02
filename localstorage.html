@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+</head>
+<body>
+    <p>local storage is the storage in the local browser. it is saved after the browser is closed. for example its is used adding the items in cart.</p>
+<script>
+    // localStorage.setItem('javascript', 'this is stored in the local browser')
+    // const show=localStorage.getItem('javascript')
+    // console.log(show)
+
+    const key='javascript'
+    localStorage.setItem(key,'this is stored in the local browser')
+    const show=localStorage.getItem(key)
+    console.log(show)
+
+// JSON->javascript object notation
+    let details={
+        "firstname":"Jun",
+        "lastname":"Bhattarai",
+        "subject":["html","css","javascript","bootstrap"]
+    }
+    const obj_convert_to_string=JSON.stringify(details)
+    localStorage.setItem('student',obj_convert_to_string)
+    const showData=localStorage.getItem('student')
+    console.log(showData)
+    const string_to_obj=JSON.parse(showData)
+    console.log(string_to_obj)
+    // document.write(details.subject[2])
+    console.log(string_to_obj.firstname)
+    console.log(string_to_obj.subject[2])
+
+
+
+</script>
+
+</body>
+</html>

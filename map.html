@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <pre>map function work as loop to fetch data from database.</pre>
+    
+    <script>
+        const numbers=[5,10,12,24,25,30]
+        // numbers.map(demoFunction)
+
+        // function demoFunction(num){
+        //     document.write(`<li>${num}</li>`)
+        // }
+
+        numbers.map(num=>(
+
+            document.write(`<li>${num}</li>`)
+        ))
+        numbers.map((num,i)=>(
+
+document.write(`<li>${i} ${num}</li>`)
+))
+    </script>
+</body>
+</html>
